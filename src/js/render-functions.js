@@ -42,12 +42,17 @@ export function renderData(imgArr, userList) {
     userList.appendChild(fragment);
 }
 
+export function handleSuccess(images) {
+    return renderData(images, document.querySelector('.gallery'));
+}
+
 export function showLoader(loaderIndicator) {
-  loaderIndicator.classList.remove('hidden');
-  loaderIndicator.style.display = 'block';
+    loaderIndicator.classList.remove('hidden');
+    loaderIndicator.style.display = 'block';
 }
 
 export function hideLoader(loaderIndicator) {
-  loaderIndicator.classList.add('hidden');
-  loaderIndicator.style.display = 'none';
+    loaderIndicator.classList.add('hidden');
+    loaderIndicator.style.display = 'none';
 }
+
