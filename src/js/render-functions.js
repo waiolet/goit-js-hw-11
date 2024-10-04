@@ -41,3 +41,13 @@ export function renderData(imgArr, userList) {
 
     userList.appendChild(fragment);
 }
+
+export function showLoader(loaderIndicator) {
+  loaderIndicator.classList.remove('hidden');
+  loaderIndicator.style.display = 'block';
+}
+
+export function hideLoader(loaderIndicator) {
+  loaderIndicator.classList.add('hidden');
+  loaderIndicator.style.display = 'none';
+}
