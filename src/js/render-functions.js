@@ -34,5 +34,7 @@ export function renderData(imgArr, userList) {
                     </ul> 
           </li>`;
     }).join("");
+
+    
     userList.insertAdjacentHTML("beforeend", markup);
 }
