@@ -46,7 +46,6 @@ function handleSubmit(event) {
             'Sorry, there are no images matching your search query. Please try again!',
           position: 'center',
         });
-        // loader.style.display = 'none';
         return;
       }
       gallery.insertAdjacentHTML('beforeend', handleSuccess(images));
